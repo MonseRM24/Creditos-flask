@@ -25,8 +25,7 @@ class Credito(db.Model):
             'plazo': self.plazo,
             'fecha_otorgamiento': self.fecha_otorgamiento
         }
-
-# Crear base de datos si no existe
+    
 if not os.path.exists('database.db'):
     with app.app_context():
         db.create_all()
